@@ -1,0 +1,19 @@
+{
+  "name": "chl002_faq_accordion",
+  "version": "1.0.0",
+  "description": "Frontend Mentor challenge 2 - FAQ accordion with SCSS and JS animation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "CHL002_FAQ_ACCORDION"
+  },
+  "keywords": [
+    "SCSS",
+    "JS"
+  ],
+  "author": "Pau Ferrer",
+  "license": "ISC"
+}
