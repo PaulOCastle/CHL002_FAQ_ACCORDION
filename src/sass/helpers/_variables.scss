@@ -1,0 +1,46 @@
+/* COLORS */
+
+// Background
+$bg-violet: #AF67E9; 	  // hsl(273, 75%, 66%)
+$bg-blue: #6565E7; 		  // hsl(240, 73%, 65%)
+
+// Text
+$text-primary: #1D1E35;   // hsl(238, 29%, 16%)
+$text-hover: #F47C57; // hsl(14, 88%, 65%)
+$text-dark: #4A4B5E; 	  // hsl(237, 12%, 33%)
+$text-light: #787887; 	  // hsl(240, 6%, 50%)
+
+// Others
+$divider: #E7E7E9; 		  // hsl(240, 5%, 91%)
+
+/* FONTS */
+$font-primary: ‘Kumbh Sans’, sans-serif;
+
+// Size
+$font-m: .75rem; 		  // 12px
+$font-l: 2.25rem;         // 36px
+
+// Weight
+$font-regular: 400;
+$font-bold: 700;
+
+/* BREAKPOINTS */
+
+// Up
+$breakpoints-up: (
+        mobile : 23.4375em,     // 375px
+        tablet :  48em,         // 768px
+        laptop :  64em,         // 1024px
+        desktop : 90em,         // 1440px
+);
+
+// Down
+$breakpoints-down: (
+        mobile : 23.375em,      // 374px
+        tablet :  47.9375em,    // 767px
+        laptop :  63.9375em,    // 1023px
+        desktop : 89.9375em,    // 1439px
+);
+
+
+

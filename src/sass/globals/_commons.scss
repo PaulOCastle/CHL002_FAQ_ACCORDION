@@ -1,0 +1,34 @@
+// Frontend Mentor Styles
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 1rem 0; // 16px
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+// Custom styles
+body {
+  min-height: 100vh;
+  font-family: $font-primary;
+  font-size: $font-m;
+  font-weight: $font-regular;
+  color: $text-primary;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 9.375rem;    // 150 px
+  background: linear-gradient(180deg, $bg-violet 0%, $bg-blue 100%);
+
+  &.resp-laptop {
+    @include responsive-down(laptop) {
+      justify-content: center;
+      padding: 0;
+    }
+  }
+}

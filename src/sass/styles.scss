@@ -1,0 +1,20 @@
+/* Main styles of the project */
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+// Helpers -> vars, functs, mixs
+@import './helpers/variables';
+@import './helpers/mixins';
+
+// Globals -> resets, commons
+@import './globals/resets';
+@import './globals/commons';
+
+// Components -> btns, cards, ...
+@import './components/cards';
+@import './components/accordions';
+
+// Modules -> special modules
+
+// Pages -> pages main styles

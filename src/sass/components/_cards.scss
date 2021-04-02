@@ -1,0 +1,122 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20.4375rem;        // 327px
+  min-height: 33.4375rem;       // 535px
+  background: #FFF;
+  border-radius: 1.375rem;  // 22px
+
+  &-header {
+    height: 7.125rem;       // 114px
+    width: 100%;
+    background: url('../images/bg-pattern-mobile.svg') no-repeat top center;
+
+    #mobile-card-header-image {
+      margin-top: -7rem;    // 112px
+      margin-left: 1rem;    // 16px
+    }
+
+    #desktop-box-image {
+      display: none;
+    }
+
+    .desktop-image {
+      display: none;
+      height: 0;
+
+      #desktop-card-header-image {
+        display: none;
+      }
+    }
+  }
+
+  &-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .body-title {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: inherit;
+      height: 4.1875rem;    // 67px
+
+      h1 {
+        font-size: $font-l;
+        font-weight: $font-bold;
+        text-transform: uppercase;
+      }
+    }
+
+    .body-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 20.45rem;  // 327.2px
+      width: inherit;
+      padding: 0 1.375rem 3rem 1.5625rem; // 0px 22px 48px 25px
+    }
+  }
+
+  &.resp-laptop {
+    @include responsive-down(laptop) {
+      flex-direction: row;
+      align-items: start;
+      width: 57.5rem;   // 920px
+      //min-height: 31.8125rem;   // 509px
+      height: 31.8125rem;
+
+      .card-header {
+        position: relative;
+        flex: 50%;
+        //height: 31.8125rem;   // 509px
+        height: 100%;
+        background: url('../images/bg-pattern-desktop.svg') no-repeat 115% 65%;
+
+        #mobile-card-header-image {
+          display: none;
+        }
+
+        #desktop-box-image {
+          display: block;
+          position: absolute;
+          top: 12.5rem;
+          left: -5.8rem;
+          z-index: 1;
+        }
+
+        .desktop-image {
+          display: block;
+          position: relative;
+          height: 100%;
+          overflow: hidden;
+
+          #desktop-card-header-image {
+            display: block;
+            position: absolute;
+            top: 4rem;
+            left: -5rem;
+          }
+        }
+      }
+
+      .card-body {
+        flex: 50%;
+        padding: 4.0625rem 6.1875rem 4.0625rem 1rem; // 65px 99px 65px 16px
+        height: 100%;
+
+        .body-title {
+          justify-content: start;
+        }
+
+        .body-content {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

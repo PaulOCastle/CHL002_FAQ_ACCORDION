@@ -1,0 +1,12 @@
+// Responsiveness
+@mixin responsive-up($devise) {
+  @media only screen and (max-width: map-get($breakpoints-up, $devise)) {
+    @content;
+  }
+}
+
+@mixin responsive-down($devise) {
+  @media only screen and (min-width: map-get($breakpoints-down, $devise)) {
+    @content;
+  }
+}
