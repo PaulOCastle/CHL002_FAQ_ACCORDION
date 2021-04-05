@@ -1,0 +1,32 @@
+.collapsible {
+
+  &-btn {
+    transition:
+            font-weight .5s ease-in-out,
+            color .5s ease-in-out;
+
+    img {
+      transition: transform .5s ease-in-out;
+    }
+  }
+
+  &-data {
+    transition: height .5s ease-in-out;
+  }
+
+
+}
+
+.collapsed {
+  .collapsible-data {
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+.expanded {
+  .collapsible-data {
+    height: auto;
+    overflow: hidden;
+  }
+}

@@ -209,8 +209,7 @@ main {
 .accordion-item {
   display: inline-flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  gap: 0.625rem;
+  justify-content: center;
   align-items: center;
   width: inherit;
   padding: 1.25rem 0;
@@ -226,10 +225,6 @@ main {
   letter-spacing: 0.03em;
   color: #787887;
   cursor: pointer;
-  transition: color 0.5s ease-in-out;
-}
-.accordion-item .item-header img {
-  transition: transform 0.5s ease-in-out;
 }
 .accordion-item .item-header:hover {
   color: #F47C57;
@@ -237,25 +232,38 @@ main {
 .accordion-item .item-content {
   color: #787887;
   padding-right: 1.25rem;
-  transition: height 0.5s ease-in-out;
 }
 .accordion-item .item-content .content-inner {
+  padding-top: 0.625rem;
   line-height: 0.9375rem;
   letter-spacing: 0.03em;
 }
-.accordion-item.collapsed {
-  gap: 0;
+.accordion-item.expanded .item-header {
+  color: #4A4B5E;
+  font-weight: 700;
 }
-.accordion-item.collapsed .item-content {
+.accordion-item.expanded .item-header img {
+  transform: rotate(180deg);
+}
+
+.collapsible-btn {
+  transition: font-weight 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+.collapsible-btn img {
+  transition: transform 0.5s ease-in-out;
+}
+.collapsible-data {
+  transition: height 0.5s ease-in-out;
+}
+
+.collapsed .collapsible-data {
   height: 0;
   overflow: hidden;
 }
-.accordion-item.active .item-header {
-  font-weight: 700;
-  color: #4A4B5E;
-}
-.accordion-item.active .item-header img {
-  transform: rotate(180deg);
+
+.expanded .collapsible-data {
+  height: auto;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=main.bundle.css.map*/

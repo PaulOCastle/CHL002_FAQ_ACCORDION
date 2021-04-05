@@ -3,4 +3,4 @@
 // Vendor -> Third party libs
 
 // Custom -> My JS files
-import './custom/_accordion'
+import './custom/_collapsibles'
