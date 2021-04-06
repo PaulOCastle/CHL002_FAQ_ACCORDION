@@ -22,21 +22,21 @@ The folders are:
 * helpers: containing the mixins and variables. I also include here the functions if any, but not for this project.
 * globals: containing the resets and commons of the project.
 * components: containing all the separate files per component. In this challenge I got identified 3 different potential components
-  * card: containing the styles for the card
-  * accordion: containing the styles for the accordion
-  * collapsibles: containing the styles for the collapsible elements. I thought it could be much more versitail if I divided the accordion in 2, accordion and collapsibles, so in a real life project I could reuse this collapsibles styles in other elements (e.g. dropdown)
+  * _cards.scss: containing the styles for the card
+  * _accordions.scss: containing the styles for the accordion
+  * _collapsibles.scss: containing the styles for the collapsible elements. I thought it could be much more versitail if I divided the accordion in 2, accordion and collapsibles, so in a real life project I could reuse this collapsibles styles in other elements (e.g. dropdown)
 
 ## JS folder
 
 Alike in the "sass" folder, I like having separate folders and import these into the main file, this time named "scripts.js".
 
-I am not very good on JS, so I am a bit loss to create meaningful folders, so I created a custom folder with my only JS file, "collapsibles.js". Please, I would be very happy to receive some feedback on this particular part of the project.
+I am not very good on JS, so I am a little lost when creating meaningful folders, so I created a custom folder with my only JS file, "_collapsibles.js". Please, I would be very happy to receive some feedback on this particular part of the project.
 
-I tried to achieve a good transitions on the expansion and collapsing events, but also the possibility to close the opened element, but I couldn't make this last bit to work. I am looking forward to getting some feedback and to learn what I am missing or have wrong in my code.
+I tried to achieve good transitions on the expanding and collapsing events, but also the possibility to close the opened element on a second click. I am looking forward to getting some feedback and to learn what I am missing or have wrong in my code.
 
 ## Conclusion
 
-I really enjoyed with this challenge and learned so much!! Really recommend conneting with Frontend Mentor's community and to try their challenges!!
+I really enjoyed with this challenge and learned so much!! Really recommend connecting with Frontend Mentor's community and to try their challenges!!
 
 Thanks for all your help and feedback!!
 

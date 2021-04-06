@@ -9,6 +9,7 @@ collapsibleBtns.forEach(function  (btn) {
         let parent = btn.parentElement;
         let data = btn.nextElementSibling;
         let dataHeight = data.scrollHeight;
+        let isCollapsed = parent.getAttribute('data-collapsed') === 'true';
 
         for (let i = 0; i < collapsibles.length; i++) {
             collapsibles[i].classList.remove('expanded');
@@ -17,7 +18,7 @@ collapsibleBtns.forEach(function  (btn) {
             collapsibleData[i].style.height = 0 + 'px';
         }
 
-        if (isCollapsed(parent)) {
+        if (isCollapsed) {
             parent.classList.remove('collapsed');
             parent.classList.add('expanded');
             parent.setAttribute('data-collapsed', 'false');
@@ -31,7 +32,3 @@ collapsibleBtns.forEach(function  (btn) {
 
     })
 })
-
-function isCollapsed (element) {
-    return element.getAttribute('data-collapsed') === 'true';
-}
