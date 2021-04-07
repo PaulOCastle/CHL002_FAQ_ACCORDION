@@ -53,6 +53,7 @@ table {
 }
 
 button, input, select, textarea {
+  padding: 0;
   background-color: transparent;
   outline: none;
   border: 0;
@@ -216,17 +217,20 @@ main {
   border-bottom: solid 0.0625rem #E7E7E9;
 }
 .accordion-item .item-header {
+  width: inherit;
+}
+.accordion-item .item-header button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: inherit;
+  cursor: pointer;
   line-height: 0.9375rem;
   letter-spacing: 0.03em;
   color: #787887;
-  cursor: pointer;
 }
-.accordion-item .item-header:hover {
+.accordion-item .item-header button:hover {
   color: #F47C57;
 }
 .accordion-item .item-content {
@@ -238,11 +242,11 @@ main {
   line-height: 0.9375rem;
   letter-spacing: 0.03em;
 }
-.accordion-item.expanded .item-header {
+.accordion-item.expanded .item-header button {
   color: #4A4B5E;
   font-weight: 700;
 }
-.accordion-item.expanded .item-header img {
+.accordion-item.expanded .item-header button img {
   transform: rotate(180deg);
 }
 

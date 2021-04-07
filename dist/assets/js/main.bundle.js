@@ -32,7 +32,7 @@ collapsibleBtns.forEach(function  (btn) {
             parent.classList.add('expanded');
             parent.setAttribute('data-collapsed', 'false');
             data.style.height = dataHeight + 'px';
-        } else { // This is the part that is not working I don't understand why!!
+        } else {
             parent.classList.remove('expanded');
             parent.classList.add('collapsed');
             parent.setAttribute('data-collapsed', 'true');
